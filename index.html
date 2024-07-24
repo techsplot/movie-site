@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47c4698589.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="hd">
-        <nav>
+        <nav>   
+        <input type="checkbox"  id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <img src="images/logo.png"  class="logo">
-        <div>
-            <button><a href="index.html">Home</a></button>
-            <button ><a href="signin.html">Sign in </a> </button>
-            <button class="btn">English <img src="images/down-icon.png" ></button>
-        </div>
+        <ul>
+            <li><a class="active"  href="index.html">Home</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><button class="btn">English<img src="images/down-icon.png" ></button></li>
+        </ul>
+        
     </nav>
     <div class="hd-content">
         <h1>Unlimited Movies, TV Shows and More.</h1>
