@@ -54,6 +54,10 @@ a.active,a:hover{
 #check{
     display: none;
 }
+.openbtn, .closebtn{
+    display: none;
+}
+
 @media (max-width: 952px){
     .logo{
         width: 70px;
@@ -62,11 +66,100 @@ a.active,a:hover{
     nav ul li a{
         font-size: 16px;
     }
+    
+
 }
 
 /* media less than 858px  */
 @media (max-width: 858px){
-    .checkbtn{
+    .container{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .openbtn,
+  .closebtn {
+    display: block;
+    float: right;
+  }
+  .webview {
+    display: none;
+  }
+
+  .mobileview {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(113, 28, 28);
+    padding: 110px;
+    z-index: 1;
+    display: flex;
+
+    overflow: hidden;
+    flex-direction: row;
+    text-align: center;
+    transition: all 0.5s;
+    transform: translateX(100%);
+  }
+
+  .mobileview ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileview ul li {
+    padding: 10px;
+    text-wrap: nowrap;
+    margin-top: 40px;
+  }
+
+  .openIt {
+    transform: translateX(0);
+  }
+
+  .closebtn {
+    background: grey;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .openbtn {
+    margin-top: 10px;
+    background: grey;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .mobileview ul li {
+    display: block;
+    /* margin: 50px 0; */
+    line-height: 30px;
+  }
+  nav .mobileview ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: var(--primary-color);
+  }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* .checkbtn{
         display: block;
     }
     ul{
@@ -95,7 +188,9 @@ a.active,a:hover{
     }
     #check:checked ~ ul{
         left: 0;
-    }
+    } */
+
+    
    
 }
 /* end medai query */
