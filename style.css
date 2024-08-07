@@ -218,6 +218,16 @@ a:hover {
   padding: 7px 10px;
   color: #fff;
 }
+.btn select{
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+}
+ select option{
+    background: black;
+    width: fit-content;
+}
 .btn img {
   width: 10px;
   margin-left: 10px;
